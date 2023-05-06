@@ -1,0 +1,39 @@
+.headphone-title {
+  width: 460px;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  color: #180202;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.headphones-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.headphones-battery {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.battery-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ff4948;
+  text-decoration: none;
+}
+
+.headphones-left {
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+}
+
+.yellow-bg {
+  margin-top: 100px;
+}

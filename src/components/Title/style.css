@@ -1,0 +1,12 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  text-align: center;
+  margin-block: 50px;
+  color: #180202;
+}
