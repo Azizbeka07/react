@@ -1,0 +1,42 @@
+.p-20 {
+    padding: 20px 0;
+}
+
+.logo {
+    width: 73px;
+    height: 66px;
+}
+
+.logo img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.header-nav__nav {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+
+.header-nav__nav-link {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-nav__nav-link img {
+    width: 18px;
+}
+
+.burger-menu {
+    width: 37px;
+}
+
+.burger-menu img {
+    width: 100%;
+}

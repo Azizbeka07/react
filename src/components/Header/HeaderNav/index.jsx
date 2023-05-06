@@ -1,13 +1,38 @@
 import React from "react";
+import "./style.css";
+// HEADER IMAGE
+import logo from "../../../assets/image/logo.png";
+import search from "../../../assets/image/search.png";
+import savat from "../../../assets/image/savat.png";
+import user from "../../../assets/image/user.png";
+import menu from "../../../assets/image/menu.png";
 
 const HeaderNav = () => {
-    return (
-      <div className="header-nav">
-          <div className="container">
-              <p>HeaderNav</p>
-          </div>
+  return (
+    <div className="header-nav">
+      <div className="container">
+        <div className="content p-20">
+          <a href="/" className="logo">
+            <img src={logo} alt="img" />
+          </a>
+          <nav className="header-nav__nav">
+            <div className="header-nav__nav-link">
+              <img src={search} alt="img" />
+            </div>
+            <div className="header-nav__nav-link">
+              <img src={savat} alt="img" />
+            </div>
+            <div className="header-nav__nav-link">
+              <img src={user} alt="img" />
+            </div>
+          </nav>
+          <button className="burger-menu">
+            <img src={menu} alt="" />
+          </button>
+        </div>
       </div>
-    )
-  };
-  
-  export default HeaderNav;
+    </div>
+  );
+};
+
+export default HeaderNav;

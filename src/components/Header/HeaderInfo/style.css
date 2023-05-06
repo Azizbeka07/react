@@ -1,0 +1,50 @@
+.header-info__right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.header-info__text {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header-info__title {
+  font-weight: 700;
+  width: 517px;
+  font-size: 99.1702px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header-info__price {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.header-info__span {
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 140%;
+  text-decoration-line: line-through;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.header-info__btn {
+    background: #fff;
+    padding: 15px 30px;
+    border-radius: 62px;
+    width: 150px;
+    color: #FF4948;
+}

@@ -1,0 +1,10 @@
+.page-header {
+  background-image: url(../../assets/image/header-bg.png);
+  background-size: cover cover;
+  background-repeat: no-repeat;
+}
+
+.Header-info__img {
+  width: 570px;
+  height: 583px;
+}

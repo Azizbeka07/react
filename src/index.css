@@ -23,3 +23,14 @@ code {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+button {
+  border: none;
+  background: unset;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
