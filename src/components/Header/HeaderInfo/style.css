@@ -47,4 +47,12 @@
     border-radius: 62px;
     width: 150px;
     color: #FF4948;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+
+.header-info__btn:hover {
+  color: #fff;
+  border: 3px solid #fff;
+  background: transparent;
 }

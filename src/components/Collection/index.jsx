@@ -8,6 +8,7 @@ import SwiperCore, { Autoplay } from "swiper";
 // SWIPER IMG
 import red from "../../assets/image/red.png";
 import orange from "../../assets/image/orange.png";
+import blue from "../../assets/image/blue.png"
 
 import { Navigation } from "swiper";
 SwiperCore.use([ Autoplay ]);
@@ -28,10 +29,10 @@ const Collection = () => {
           modules={[Navigation, Autoplay]}
         >
           <SwiperSlide className="swiper-slide"><img src={red} alt="img" /></SwiperSlide>
+          <SwiperSlide className="swiper-slider"><img src={blue} alt="img" /></SwiperSlide>
           <SwiperSlide className="swiper-slide"><img src={orange} alt="img" /></SwiperSlide>
           <SwiperSlide className="swiper-slide"><img src={red} alt="img" /></SwiperSlide>
-          <SwiperSlide className="swiper-slide"><img src={orange} alt="img" /></SwiperSlide>
-          <SwiperSlide className="swiper-slide"><img src={red} alt="img" /></SwiperSlide>
+          <SwiperSlide className="swiper-slider"><img src={blue} alt="img" /></SwiperSlide>
           <SwiperSlide className="swiper-slide"><img src={orange} alt="img" /></SwiperSlide>
         </Swiper>
       </div>
