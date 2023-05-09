@@ -1,7 +1,7 @@
 .header-info__right {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .header-info__text {
@@ -42,13 +42,13 @@
 }
 
 .header-info__btn {
-    background: #fff;
-    padding: 15px 30px;
-    border-radius: 62px;
-    width: 150px;
-    color: #FF4948;
-    border: 3px solid transparent;
-    transition: .5s;
+  background: #fff;
+  padding: 15px 30px;
+  border-radius: 62px;
+  width: 150px;
+  color: #ff4948;
+  border: 3px solid transparent;
+  transition: 0.5s;
 }
 
 .header-info__btn:hover {

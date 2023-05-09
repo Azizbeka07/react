@@ -1,18 +1,18 @@
 import React from "react";
-import Header from "./components/Header";
-import Collection from "./components/Collection";
-import Footer from "./components/Footer";
-import HeadPhones from "./components/HeadPhones";
-import LatestProduction from "./components/LatestProduction";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./About";
+import Contact from "./Contact";
+import Home from "./Home";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Collection />
-      <HeadPhones />
-      <LatestProduction />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/about" element={<About/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

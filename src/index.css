@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -33,4 +34,53 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.mt-5 {
+  margin-top: 50px;
+}
+
+.fd-col {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: coral;
+}
+
+.count {
+  font-size: 50px;
+  line-height: 130%;
+  font-weight: 500;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 130%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-green {
+  background-color: green;
+}
+
+.btn-yellow {
+  background-color: #ff4948;
+}
+
+.btn-red {
+  background-color: red;
 }

@@ -17,14 +17,14 @@ const HeaderNav = () => {
           </a>
           <nav className="header-nav__nav">
             <div className="header-nav__nav-link">
-              <img src={search} alt="img" />
+              <img  src={search} alt="img" />
             </div>
-            <div className="header-nav__nav-link">
+            <a href="http://localhost:3000/about" className="header-nav__nav-link">
               <img src={savat} alt="img" />
-            </div>
-            <div className="header-nav__nav-link">
+            </a>
+            <a href="http://localhost:3000/contact" className="header-nav__nav-link">
               <img src={user} alt="img" />
-            </div>
+            </a>
           </nav>
           <button className="burger-menu">
             <img src={menu} alt="" />
