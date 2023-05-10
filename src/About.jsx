@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const About = () => {
   const [count, setCount] = useState(0);
-  const [firstCount, setFirstCount] = useState(0)
+  const [firstCount, setFirstCount] = useState(0);
 
   return (
     <div className="container">
@@ -14,6 +14,9 @@ const About = () => {
           </button>
           <button className="btn btn-yellow" onClick={() => setCount(0)}>
             Reset
+          </button>
+          <button className="btn btn-red" onClick={() => setCount(count - 1)}>
+            Decrement
           </button>
         </div>
       </div>
