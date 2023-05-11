@@ -41,20 +41,60 @@ button {
 }
 
 .fd-col {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 500px;
+  width: 1000px;
   height: 500px;
   margin: 0 auto;
-  margin-top: 50px;
-  background-color: coral;
+}
+
+.background {
+  background: #000;
+  width: 100%;
+  height: 100vh;
+}
+
+.btn-box {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: end;
+  gap: 30px;
+}
+
+.firstCount {
+  font-size: 50px;
+  line-height: 130%;
+  font-weight: 500;
+  color: #fff;
+}
+
+.result {
+  font-size: 50px;
+  line-height: 130%;
+  font-weight: 500;
+  color: #fff;
+}
+
+.count-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.count-plus {
+  font-size: 50px;
+  line-height: 130%;
+  font-weight: 500;
+  color: #fff;
 }
 
 .count {
   font-size: 50px;
   line-height: 130%;
   font-weight: 500;
+  color: #fff;
 }
 
 .btn-group {
@@ -71,16 +111,22 @@ button {
   line-height: 130%;
   color: #fff;
   cursor: pointer;
+  height: 50px;
 }
 
 .btn-green {
-  background-color: green;
+  background-color: #1C1C1C;
 }
 
 .btn-yellow {
-  background-color: #ff4948;
+  background-color: #FF9500;
 }
 
 .btn-red {
-  background-color: red;
+  background-color: #505050;
+}
+
+.df-sb{
+  display: flex;
+  justify-content: space-between;
 }
