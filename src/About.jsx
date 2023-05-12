@@ -4,9 +4,10 @@ const About = () => {
   const [count, setCount] = useState(0);
   const [firstCount, setFirstCount] = useState(0);
   const [result, setResult] = useState(0);
+  const [operator, setOperator] = useState("+")
 
   const addNumbers = () => {
-    return setResult(count + firstCount);
+    return setResult(count * firstCount);
   };
 
   function reset () {
@@ -18,9 +19,15 @@ const About = () => {
     <section className="background">
       <div className="container">
       <div className="contents fd-col mt-5">
+        <div className="increase-box">
+          <button className="color operator" onClick={() => setOperator("-")}>-</button>
+          <button className="color operator" onClick={() => setOperator("*")}>*</button>
+          <button className="color operator" onClick={() => setOperator("/")}>/</button>
+          <button className="color operator" onClick={() => setOperator("+")}>+</button>
+        </div>
         <div className="count-box">
           <h3 className="firstCount">{firstCount}</h3>
-          <p className="count-plus">+</p>
+          <button className="count-plus">{operator}</button>
           <h3 className="count">{count}</h3>
           <p className="count-plus">=</p>
           <h3 className="result">{result}</h3>
