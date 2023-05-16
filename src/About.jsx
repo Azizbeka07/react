@@ -1,106 +1,38 @@
-import React, { useState } from "react";
-import Delete from "../src/assets/image/delete.png";
-import arrowDown from "../src/assets/image/arrow-down.png";
+import React, { useEffect, useState } from "react";
 
 const About = () => {
-  const [count, setCount] = useState(0);
-  const [firstCount, setFirstCount] = useState(0);
-  const [result, setResult] = useState(0);
-  const [operator, setOperator] = useState("+");
+  const [data, setData] = useState(null)
 
-  function addNumbers () {
-    switch (operator) {
-    case  "+":
-    setResult(count + firstCount)
-      break;
-     case "-":
-      setResult(count - firstCount)
-      break;
-     case "*":
-      setResult(count * firstCount);
-      break;
-     case "/":
-      setResult(count / firstCount)
-  };
-  }
+// Application Programming Interface
 
-  function reset() {
-    setCount(0);
-    setFirstCount(0);
-    setResult(0);
-  }
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/photos')
+      .then(response => response.json())
+      .then(json => setData(json))
+  }, []);
+
+  console.log(data);
+
   return (
     <div className="container">
-      <div className="contents fd-col mt-5 background">
-          
-          <div className="count-box">
-            <h3 className="firstCount">{count}</h3>
-            <button className="count-plus">{operator}</button>
-            <h3 className="count">{firstCount}</h3>
-            <p className="count-plus">=</p>
-            <h3 className="result">{result}</h3>
-          </div>
-        <div className="btn-box">
-        <div className="increase-box">
-            <button className="color operator" onClick={() => setOperator("-")}>
-              -
-            </button>
-            <button className="color operator" onClick={() => setOperator("*")}>
-              *
-            </button>
-            <button className="color operator" onClick={() => setOperator("/")}>
-              /
-            </button>
-            <button className="color operator" onClick={() => setOperator("+")}>
-              +
-            </button>
-          </div>
-          <div className="btn-group">
-            <div className="arrow-box">
-              <button
-                className="btn btn-yellow"
-                onClick={() => setFirstCount(firstCount + 1)}
-                disabled={count === 100}
-              >
-                <img src={arrowDown} alt="img" className="arrowTop" />
-              </button>
-              <button
-                className="btn btn-yellow"
-                onClick={() => setFirstCount(firstCount - 1)}
-                disabled={firstCount === 0}
-              >
-                <img src={arrowDown} alt="img" className="arrow" />
-              </button>
-              <button></button>
+      <div className="user-list">
+        {data?.map((el) => {
+          return (
+            <div key={el.id}>
+               <img src={el.url}/> 
+               <p>{el.username}</p>
+               <span>{el.phone}</span> 
+              <a href={el.title}
+              target="_blank"
+              rel='noopener noreferrer'>
+                {el.website}
+          </a>
             </div>
-            <button className="btn btn-yellow" onClick={() => reset(0)}>
-              <img src={Delete} alt="img" className="delete" />
-            </button>
-          </div>
-          <div className="box-group">
-            <button className="btn btn-yellow" onClick={addNumbers}>
-              =
-            </button>
-            <button
-              className="btn btn-yellow"
-              onClick={() => setCount(count + 1)}
-              disabled={firstCount === 100}
-            >
-              <img src={arrowDown} alt="img" className="arrowTop" />
-            </button>
-            <button
-              className="btn btn-yellow"
-              onClick={() => setCount(count - 1)}
-              disabled={count === 0}
-            >
-              <img src={arrowDown} alt="img" className="arrow" />
-            </button>
-          </div>
-        </div>
+          )
+        })}
       </div>
-      <div className="content"></div>
     </div>
-  );
-};
+  )
+}
 
 export default About;

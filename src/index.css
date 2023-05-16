@@ -58,7 +58,6 @@ button {
 .btn-box {
     display: flex;
     flex-direction: row-reverse;
-    align-items: end;
     gap: 30px;
 }
 
