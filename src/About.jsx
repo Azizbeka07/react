@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import CommentList from "./components/CommenList";
 
 const About = () => {
   const [data, setData] = useState(null)
@@ -6,7 +7,7 @@ const About = () => {
 // Application Programming Interface
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/photos')
+    fetch('https://jsonplaceholder.typicode.com/comments')
       .then(response => response.json())
       .then(json => setData(json))
   }, []);
@@ -18,19 +19,17 @@ const About = () => {
       <div className="user-list">
         {data?.map((el) => {
           return (
-            <div key={el.id}>
-               <img src={el.url}/> 
-               <p>{el.username}</p>
-               <span>{el.phone}</span> 
-              <a href={el.title}
-              target="_blank"
-              rel='noopener noreferrer'>
-                {el.website}
-          </a>
+            <div key={el.id} className="wrapper">
+              <div className="box">
+              <i className="coment">{el.body}</i>
+              <h2 className="name">{el.name}</h2>
+             <a className="email" href={`mailto:${el.email}`}>{el.email}</a>
+              </div>
             </div>
           )
         })}
       </div>
+      <CommentList comments={data} />
     </div>
   )
 }

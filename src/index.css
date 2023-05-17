@@ -33,147 +33,40 @@ button {
     justify-content: space-between;
 }
 
-.mt-5 {
-    margin-top: 50px;
-}
-
-.fd-col {
+.box {
     display: flex;
+    padding: 50px 50px;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 1000px;
-    height: 500px;
-    margin: 0 auto;
-}
-
-.background {
-    background: #000;
-    width: 400px;
-    height: 550px;
-    margin: 100px auto;
-    border-radius: 10px;
-}
-
-.btn-box {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 30px;
-}
-
-.firstCount {
-    font-size: 50px;
-    line-height: 130%;
-    font-weight: 500;
-    color: #fff;
-}
-
-.color {
-    font-size: 50px;
-    line-height: 130%;
-    font-weight: 500;
-    background: #FF9500;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.increase-box {
+    background: cadetblue;
+    box-shadow: 1px 1px 10px 10px cadetblue;
     gap: 15px;
+    border-radius: 30px;
+}
+
+
+.name {
+    margin-left: auto;
+    font-size: 22px;
+    color: white;
+}
+
+.wrapper {
+    max-width: 800px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-.delete,
-.arrow {
-    width: 20px;
-    height: 20px;
-}
-
-.arrowTop {
-    width: 20px;
-    height: 20px;
-    transform: rotate(180deg);
-}
-
-.arrow-box {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.result {
-    font-size: 50px;
-    line-height: 130%;
-    font-weight: 500;
-    color: #fff;
-}
-
-.count-box {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 15px;
-}
-
-.count-plus {
-    font-size: 50px;
-    line-height: 130%;
-    font-weight: 500;
-    color: #fff;
-}
-
-.count {
-    font-size: 50px;
-    line-height: 130%;
-    font-weight: 500;
-    color: #fff;
-}
-
-.btn-group {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    row-gap: 30px;
-    margin-top: 30px;
-}
-
-.box-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 30px;
-    margin-top: 30px;
-}
-
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 25px;
-    border-radius: 10px;
+.coment {
     font-size: 20px;
-    line-height: 130%;
-    cursor: pointer;
-    height: 50px;
+    color: white;
 }
 
-.btn-green {
-    background-color: #1C1C1C;
-}
-
-.btn-yellow {
-    background-color: #FF9500;
-}
-
-.btn-red {
-    background-color: #505050;
-}
-
-.df-sb {
-    display: flex;
-    justify-content: space-between;
+.email {
+    display: block;
+    text-align: right;
+    width: 100%;
+    color: white;
 }

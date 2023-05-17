@@ -17,7 +17,7 @@ const HeaderNav = () => {
           </a>
           <nav className="header-nav__nav">
             <div className="header-nav__nav-link">
-              <img  src={search} alt="img" />
+              <img src={search} alt="img" />
             </div>
             <a href="http://localhost:3000/about" className="header-nav__nav-link">
               <img src={savat} alt="img" />
