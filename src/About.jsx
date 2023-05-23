@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import CommentList from "./components/CommenList";
 
 const About = () => {
-  const [data, setData] = useState(null)
+  const [data, setData] = useState([])
 
 // Application Programming Interface
 

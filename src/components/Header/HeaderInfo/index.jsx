@@ -12,7 +12,9 @@ const HeaderInfo = () => {
             <p className="header-info__text">Hear it. Feel it</p>
             <h1 className="header-info__title">Move with the music</h1>
             <p className="header-info__price">$ 435 <span className="header-info__span">$ 465</span></p>
-            <button className="header-info__btn">BUY NOW</button>
+            <button className="header-info__btn">
+              BUY NOW
+            </button>
           </div>
         </div>
       </div>

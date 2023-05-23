@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
 // HEADER IMAGE
 import logo from "../../../assets/image/logo.png";
 import search from "../../../assets/image/search.png";
@@ -19,15 +20,15 @@ const HeaderNav = () => {
             <div className="header-nav__nav-link">
               <img src={search} alt="img" />
             </div>
-            <a href="http://localhost:3000/about" className="header-nav__nav-link">
+            <Link to="/about" className="header-nav__nav-link">
               <img src={savat} alt="img" />
-            </a>
-            <a href="http://localhost:3000/contact" className="header-nav__nav-link">
+            </Link>
+            <Link to="/contact" className="header-nav__nav-link">
               <img src={user} alt="img" />
-            </a>
+            </Link>
           </nav>
           <button className="burger-menu">
-            <img src={menu} alt="" />
+            <img src={menu} alt="img" />
           </button>
         </div>
       </div>
